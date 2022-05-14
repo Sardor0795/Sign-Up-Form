@@ -1,18 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Project</title>
+    <title>Log In Form</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 
     <!-- Stylesheets -->
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
+    <!-- <link rel="stylesheet" href="css/normalize.css"> -->
+    <!-- <link rel="stylesheet" href="css/style.css"> -->
+    <link rel="stylesheet" href="./css/main-min.css">
 </head>
+
 <body>
-    
+
+    <main class="main-content">
+        <div class="container">
+            <div class="main--info">
+                <div class="main--info--box">
+                    <button class="shoose-btn">frontend and backend</button>
+                    <h1 class="main--title">Learn to program by <br> watching <br> professionals</h1>
+                    <p class="main--text">See how experienced developers solve <br> problems in real time</p>
+                </div>
+                <a href="#" class="try--btn">Try it free 7 days, then $20/mo</a>
+            </div>
+            <form action="https://echo.htmlacademy.ru" method="POST" class="main-form">
+                <h1 class="form--title">Sign up for the course and get free 7 days</h1>
+                <input type="text" class="f-name" required name="f-name" placeholder="Name">
+                <input type="text" class="l-name" required name="l-name" placeholder="Last Name">
+                <input type="email" class="email" required name="email" placeholder="Email Address">
+                <input type="password" class="password" required name="password" placeholder="Password">
+                <button type="submit" class="submit--btn">Claim your free trial</button>
+                <p class="form-explain">By clicking the button, you are agreeing to our <a href="#"
+                        class="explain--link">Terms and Services</a></p>
+            </form>
+        </div>
+    </main>
 
     <script src="js/main.js"></script>
 </body>
+
 </html>

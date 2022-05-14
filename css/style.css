@@ -18,9 +18,9 @@ body {
   display: flex;
   flex-direction: column;
   height: 100%;
-  background-color: #fff;
+  background-color: #f1f4ff;
   color: #222;
-  font-family: "Arial", sans-serif;
+  font-family: "Inter", sans-serif;
   padding: 0;
   margin: 0;
   font-size: 16px;
@@ -39,11 +39,14 @@ img {
   display: block;
 }
 
-a, span, button {
+a,
+span,
+button {
   display: inline-block;
 }
 
-button{
+button {
+  color: #fff;
   border: none;
   background: none;
   cursor: pointer;
@@ -53,27 +56,178 @@ button{
 
 .container {
   width: 100%;
-  max-width: 1200px;
+  max-width: 1220px;
   padding-left: 50px;
   padding-right: 50px;
   margin-left: auto;
   margin-right: auto;
+  display: flex;
+  justify-content: space-between;
 }
 
 /* MAIN CONTENT */
 
 .main-content {
   flex-grow: 1;
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.main--info {
+  width: calc(50% - 6px);
+  margin-right: 12px;
+}
+
+.main--info--box {
+  border-radius: 20px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+  padding: 0 60px;
+  padding-top: 55px;
+  padding-bottom: 203px;
+  color: #fff;
+  background-image: url("../img/main-bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.shoose-btn {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+  padding: 5px 15px;
+  opacity: 0.8;
+  border: 1px solid #ffffff;
+  border-radius: 41px;
+  margin-bottom: 60px;
+}
+
+.shoose-btn:hover {
+  opacity: 0.9;
+}
+
+.shoose-btn:active {
+  opacity: 0.7;
+}
+
+.main--title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 46px;
+  margin-bottom: 25px;
+}
+
+.main--text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+}
+
+.try--btn {
+  background-color: #4dc490;
+  display: block;
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  font-weight: 700;
+  font-size: 19px;
+  line-height: 23px;
+  color: #ffffff;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+
+.try--btn:hover {
+  opacity: 0.9;
+}
+
+.try--btn:active {
+  opacity: 0.7;
+}
+
+.main-form {
+  width: calc(50% - 6px);
+  background-color: #fff;
+  border-radius: 20px;
+  padding: 55px 60px 40px 60px;
+}
+
+/* FORM */
+
+.form--title {
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 42px;
+  color: #000000;
+  margin-bottom: 80px;
+}
+
+input {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #555555;
+  border: 0;
+  width: 100%;
+  outline: 0;
+  padding-bottom: 14px;
+  border-bottom: 1px solid #000;
+}
+
+input:not(:last-child) {
+  margin-bottom: 35px;
+}
+
+input:last-child {
+  margin-bottom: 63px;
+}
+
+.submit--btn {
+  display: block;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+  color: #ffffff;
+  background-color: #655af2;
+  border-radius: 10px;
+  width: 100%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-bottom: 8px;
+}
+
+.submit--btn:hover {
+  opacity: 0.9;
+}
+
+.submit--btn:active {
+  opacity: 0.7;
+}
+
+.form-explain {
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 15px;
+  color: #555555;
+  text-align: center;
+}
+
+.explain--link {
+  color: #f03535;
+  text-decoration: underline;
 }
 
 /* RETINA BG */
 
-@media
-only screen and (-webkit-min-device-pixel-ratio: 2),
-only screen and (   min--moz-device-pixel-ratio: 2),
-only screen and (     -o-min-device-pixel-ratio: 2/1),
-only screen and (        min-device-pixel-ratio: 2),
-only screen and (                min-resolution: 192dpi),
-only screen and (                min-resolution: 2dppx) { 
-
+@media only screen and (-webkit-min-device-pixel-ratio: 2),
+  only screen and (min--moz-device-pixel-ratio: 2),
+  only screen and (-o-min-device-pixel-ratio: 2/1),
+  only screen and (min-device-pixel-ratio: 2),
+  only screen and (min-resolution: 192dpi),
+  only screen and (min-resolution: 2dppx) {
+  .main--info--box {
+    background-image: url("../img/main-bg@2x.jpg");
+  }
 }
